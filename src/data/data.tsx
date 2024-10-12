@@ -6,27 +6,20 @@ import {
   FlagIcon,
   MapIcon,
   SparklesIcon,
+  PhoneIcon,
+  InboxIcon,
 } from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
-import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
-import heroImage from '../images/header-background.webp';
+import heroImage from '../images/header-background.jpg';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
-import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
-import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
-import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
-import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
-import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
-import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
-import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
-import profilepic from '../images/profilepic.jpg';
-import testimonialImage from '../images/testimonial.webp';
+import porfolioImage4 from '../images/portfolio/portfolio-4.webp';
+import porfolioImage5 from '../images/portfolio/portfolio-5.webp';
+import profilepic from '../images/profilepic.png';
+import testimonialImage from '../images/testimonial.jpg';
 import {
   About,
   ContactSection,
@@ -44,8 +37,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Gabriel Alao - Full Stack Software Engineer',
+  description: "Portfolio site built with react by Gabriel Alao",
 };
 
 /**
@@ -69,32 +62,25 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `I'm Gabriel Alao.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        I'm a Albany, NY based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
+        at <strong className="text-stone-100">Gabby</strong> <br/> building innovative web and blockchain applications.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+      Over the 12+ years, I've honed my expertise in backend development and full stack solutions, contributing to several high-impact projects across various industries, including <strong className="text-stone-100">Web3, DeFi, Fintech, CMS, Marketplace, and Gaming</strong> platforms.<br/>
+      My experience spans from developing scalable APIs to crafting responsive front-end interfaces, using cutting-edge technologies to deliver powerful, user-friendly experiences. I'm always eager to tackle new challenges and contribute to dynamic, forward-thinking teams.
       </p>
     </>
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
+      href: '/assets/Gabriel_Alao.pdf',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
-    },
-    {
-      href: `#${SectionId.Contact}`,
-      text: 'Contact',
-      primary: false,
     },
   ],
 };
@@ -104,16 +90,15 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `Proficient in JavaScript/TypeScript, React.js, Angular, Next.js, Node.js, Nest.js, C#, .Net, Python, Flask, FastAPI, Django, Golang, 
+  Solidity, Rust, Truffle, Hardhat, Ethers.js, Web3.js, MySQL, MS SQL, PostgreSQL, MongoDB, Redis, Kafka, RabbitMQ, AWS, Docker and Git.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Location', text: 'Albany, NY', Icon: MapIcon},
+    {label: 'Cell Phone', text: '+1 (347) 441-0997', Icon: PhoneIcon},
+    {label: 'Country', text: 'United States', Icon: FlagIcon},
+    {label: 'Email', text: 'gabriel@gabbysoftware.com', Icon: InboxIcon},
+    {label: 'Interests', text: 'Gaming, Soccer, Bodybuilding', Icon: SparklesIcon},
+    {label: 'Study', text: 'University of California, Berkeley', Icon: AcademicCapIcon},
   ],
 };
 
@@ -122,36 +107,27 @@ export const aboutData: About = {
  */
 export const skills: SkillGroup[] = [
   {
-    name: 'Spoken languages',
-    skills: [
-      {
-        name: 'English',
-        level: 10,
-      },
-      {
-        name: 'French',
-        level: 4,
-      },
-      {
-        name: 'Spanish',
-        level: 3,
-      },
-    ],
-  },
-  {
     name: 'Frontend development',
     skills: [
       {
-        name: 'React',
+        name: 'React.js',
+        level: 10,
+      },
+      {
+        name: 'Next.js',
+        level: 10,
+      },
+      {
+        name: 'Angular',
         level: 9,
       },
       {
-        name: 'Typescript',
-        level: 7,
+        name: 'TypeScript',
+        level: 9,
       },
       {
-        name: 'GraphQL',
-        level: 6,
+        name: 'CMS',
+        level: 9,
       },
     ],
   },
@@ -160,32 +136,73 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'Node.js',
+        level: 10,
+      },
+      {
+        name: 'Express.js',
+        level: 10,
+      },
+      {
+        name: 'C#, .Net',
+        level: 9,
+      },
+      {
+        name: 'Python',
         level: 8,
       },
       {
-        name: 'Rust',
-        level: 5,
+        name: 'Golang',
+        level: 6,
       },
       {
-        name: 'Golang',
-        level: 4,
+        name: 'Rust',
+        level: 6,
       },
     ],
   },
   {
-    name: 'Mobile development',
+    name: 'Blockchain development',
     skills: [
       {
-        name: 'React Native',
+        name: 'Web3.js',
         level: 9,
       },
       {
-        name: 'Flutter',
-        level: 4,
+        name: 'Ethers.js',
+        level: 9,
       },
       {
-        name: 'Swift',
-        level: 3,
+        name: 'Solidity',
+        level: 8,
+      },
+      {
+        name: 'Hardhat',
+        level: 7,
+      },
+      {
+        name: 'Truffle',
+        level: 6,
+      },
+    ],
+  },
+  {
+    name: 'Database management',
+    skills: [
+      {
+        name: 'MySQL',
+        level: 9,
+      },
+      {
+        name: 'MS SQL',
+        level: 9,
+      },
+      {
+        name: 'PostgreSQL',
+        level: 9,
+      },
+      {
+        name: 'MongoDB',
+        level: 9,
       },
     ],
   },
@@ -196,70 +213,34 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'NFT.com',
+    description: 'The Social NFT Marketplace',
+    url: 'https://nft.com',
     image: porfolioImage1,
   },
   {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage2,
-  },
-  {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage3,
-  },
-  {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Mack & Pouya Photography',
+    description: 'Mack & Pouya’s eCommerce website',
+    url: 'https://mackpouya.webflow.io',
     image: porfolioImage4,
   },
   {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'The Scott Resort & Spa',
+    description: 'Scottsdale Resort & Event Venue',
+    url: 'https://www.thescottresort.com',
     image: porfolioImage5,
   },
   {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage6,
+    title: 'HouseLens',
+    description: 'Visual Marketing for Real Estate',
+    url: 'https://houselens.com',
+    image: porfolioImage2,
   },
   {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage7,
-  },
-  {
-    title: 'Project title 8',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage8,
-  },
-  {
-    title: 'Project title 9',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage9,
-  },
-  {
-    title: 'Project title 10',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage10,
-  },
-  {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage11,
+    title: 'Fiola DC',
+    description: 'Michelin-starred Restaurant for Italian Food',
+    url: 'https://www.fioladc.com',
+    image: porfolioImage3,
   },
 ];
 
@@ -268,39 +249,59 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-  {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'April 2013',
+    location: 'Berkeley, CA',
+    title: 'Bachelor of Computer Science',
+    content: <p>During my university days as a Computer Science student, I developed a strong foundation in software engineering, algorithms, and problem-solving.
+    I immersed myself in coding, experimenting with various programming languages and exploring different areas of technology, from web development to database management. This is where my passion for building solutions that can impact real-world applications first took shape.
+    </p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'April 2022 - Present',
+    location: 'Gabby',
+    title: 'Full Stack Engineer',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        As a Full Stack Software Engineer at Gabby, I was deeply involved in the development of scalable and high-performance web applications. 
+        I collaborated closely with cross-functional teams to build and enhance features that improved user experience and met business objectives.
+        My role encompassed both front-end and back-end development, ensuring seamless integration between client-side interfaces and server-side logic.
       </p>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'January 2019 - December 2021',
+    location: 'Li.Fi',
+    title: 'Senior Software Engineer',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        As a Senior Software Engineer at Li.Fi, I played a pivotal role in building and optimizing complex blockchain integration systems that powered cross-chain liquidity protocols. 
+        I was responsible for architecting and maintaining back-end services that interfaced with various blockchain networks, ensuring seamless asset transfers and swaps across multiple chains.
+      </p>
+    ),
+  },
+  {
+    date: 'June 2016 - December 2018',
+    location: 'Hypar',
+    title: 'Software Engineer',
+    content: (
+      <p>
+        As a Software Engineer at Hypar, I contributed to building innovative solutions for automating architectural design workflows. 
+        My role involved developing both the back-end systems and front-end interfaces that powered the platform, enabling architects and engineers to create parametric building designs efficiently. 
+        I focused on improving the platform’s performance, usability, and integration with third-party services.
+      </p>
+    ),
+  },
+  {
+    date: 'January 2019 - December 2021',
+    location: 'XCEL Corp',
+    title: 'Software Engineer',
+    content: (
+      <p>
+        As a Software Engineer at XCEL Corp, I was responsible for developing and maintaining enterprise-level web applications, collaborating with product teams to deliver tailored solutions that enhanced business processes. 
+        My role involved working across the entire tech stack to ensure seamless integration between the front-end and back-end systems while ensuring scalability and performance for large user bases.
       </p>
     ),
   },
@@ -313,19 +314,12 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
+      name: 'James Todd, Founder at TMJ Software',
+      text: 'Working with Gabriel has been an absolute pleasure. Their expertise in full stack development and ability to tackle complex challenges with innovative solutions has significantly improved our project outcomes. From backend architecture to front-end design, Gabriel consistently delivers high-quality work on time. I highly recommend them for any development role.',
     },
     {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
-    },
-    {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
+      name: 'Gavin Mai, CTO at NFT.com',
+      text: 'Working with Gabriel on blockchain integration was a game-changer for our project. Their deep understanding of decentralized technologies, smart contracts, and cross-chain protocols helped us build a secure and scalable system. Gabriel consistently delivered high-quality code and was instrumental in optimizing our blockchain infrastructure. I highly recommend their expertise in blockchain development.',
     },
   ],
 };
@@ -365,9 +359,6 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/gabbysolutions'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/gabriel-alao-5b1734330/'},
 ];
