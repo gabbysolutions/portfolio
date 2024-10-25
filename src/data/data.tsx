@@ -64,7 +64,7 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Albany, NY based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
+        I'm a Georgetown, TX based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
         at <strong className="text-stone-100">Gabby</strong> <br/> building innovative web and blockchain applications.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
@@ -91,7 +91,7 @@ export const aboutData: About = {
   description: `Proficient in JavaScript/TypeScript, React.js, Angular, Next.js, Node.js, Nest.js, C#, .Net, Python, Flask, FastAPI, Django, Golang, 
   Solidity, Rust, Truffle, Hardhat, Ethers.js, Web3.js, MySQL, MS SQL, PostgreSQL, MongoDB, Redis, Kafka, RabbitMQ, AWS, Docker and Git.`,
   aboutItems: [
-    {label: 'Location', text: 'Albany, NY', Icon: MapIcon},
+    {label: 'Location', text: 'Georgetown, TX', Icon: MapIcon},
     {label: 'Cell Phone', text: '+1 (347) 441-0997', Icon: PhoneIcon},
     {label: 'Country', text: 'United States', Icon: FlagIcon},
     {label: 'Email', text: 'gabriel@gabbysoftware.com', Icon: InboxIcon},
