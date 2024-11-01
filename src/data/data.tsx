@@ -274,7 +274,7 @@ export const experience: TimelineItem[] = [
     ),
   },
   {
-    date: 'January 2019 - December 2021',
+    date: 'January 2021 - December 2021',
     location: 'Li.Fi',
     title: 'Senior Software Engineer',
     content: (
@@ -285,7 +285,7 @@ export const experience: TimelineItem[] = [
     ),
   },
   {
-    date: 'June 2016 - December 2018',
+    date: 'June 2016 - December 2020',
     location: 'Hypar',
     title: 'Software Engineer',
     content: (
