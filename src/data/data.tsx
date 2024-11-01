@@ -88,7 +88,7 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Proficient in JavaScript/TypeScript, React.js, Angular, Next.js, Node.js, Nest.js, C#, .Net, Python, Flask, FastAPI, Django, Golang, 
+  description: `Proficient in JavaScript/TypeScript, React.js, Next.js, Vue.js, Angular, Node.js, Nest.js, C#, .Net, Python, Flask, FastAPI, Django, Golang, 
   Solidity, Rust, Truffle, Hardhat, Ethers.js, Web3.js, MySQL, MS SQL, PostgreSQL, MongoDB, Redis, Kafka, RabbitMQ, AWS, Docker and Git.`,
   aboutItems: [
     {label: 'Location', text: 'Georgetown, TX', Icon: MapIcon},
