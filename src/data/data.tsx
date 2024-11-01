@@ -116,6 +116,10 @@ export const skills: SkillGroup[] = [
         level: 10,
       },
       {
+        name: 'Vue.js',
+        level: 9,
+      },
+      {
         name: 'Angular',
         level: 9,
       },
